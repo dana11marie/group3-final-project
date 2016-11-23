@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  CSS
+  <!-- CSS -->
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
   <title>Movie App</title>
 </head>
@@ -13,10 +10,25 @@
 
   <div ng-controller="movieCtrl">
 
-  <input type="text" ng-model="movieTitle">
-  <button ng-click="findMovie(movieTitle)">Find Movie</button>
+<h1>Find a Movie!</h1>
+<form>
+  <fieldset>
+     <legend>Selecting elements</legend>
+       <p>
+          <label>How many stars?</label>
+          <select id = "stars">
+            <option value = "1" ng-model="rating">1</option>
+            <option value = "2" ng-model="rating">2</option>
+            <option value = "3" ng-model="rating">3</option>
+            <option value = "4" ng-model="rating">4</option>
+          </select>
+       </p>
+    </fieldset>
+ </form>
 
-  <p>{{runTime}}</p>
+  <button ng-click="findMovie(rating)">Find Movie</button>
+
+  <p>{{movieData}}</p>
 
   </div>
 
