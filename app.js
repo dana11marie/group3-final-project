@@ -23,17 +23,22 @@ var app = angular.module('movieMod', []);
 
 app.controller('movieCtrl', function($http, $scope) {
 
-  $scope.findMovie = function(rating) {
+  $scope.findMovie = function(releaseYear, rating) {
 
 // rating is populating as undefined.
 
-    $http.get('https://api.themoviedb.org/3/discover/movie?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US&sort_by=vote_average.asc&include_adult=false&vote_average.gte=' + rating + '&with_runtime.lte=180')
+    $http.get('https://api.themoviedb.org/3/discover/movie?api_key=246abf971b8f4d88b4c901eeacc07819&sort_by=popularity.desc&include_adult=false&primary_release_date.gte=' + releaseYear +'&vote_average.gte=' + rating +'&with_runtime.lte=180')
     .then(function successCallback(response) {
 
       var movieData = response;
-      console.log(movieData);
+      console.log(movieData.data.results);
 
-      $scope.runTime = movieData.data.runtime;
+      var movies = movieData.data.results;
+
+      movies.forEach(function(movie){
+        console.log(movie.title);
+        $('#movieList').append('<li>' + movie.title + '</li>');
+    });
 
     });
 
