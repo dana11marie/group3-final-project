@@ -8,7 +8,7 @@
 </head>
 <body ng-app="movieMod">
 
-  <div ng-controller="movieCtrl">
+<div class="main" ng-controller="movieCtrl">
 
 <h1>Find a Movie!</h1>
 <form>
@@ -45,9 +45,15 @@
 
   <button ng-click="findMovie(releaseYear, rating)">Find Movie</button>
 
-  <ul id="movieList"></ul>
-
-  </div>
+<!-- RESULTS -->
+    <div ng-repeat="movie in movies" class="col-md-6">
+        <div class="thumbnail">
+            <!-- img needs to be added to the end of https://image.tmdb.org/t/p/w500 -->
+            <img ng-src="https://image.tmdb.org/t/p/w500"+{{ movieImg }}>
+            <p class="title">{{ movie.title }}</p>
+        </div>
+    </div>
+</div>
 
   <!-- JQUERY -->
   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
