@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  // CSS
+    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+  <title>Movie App</title>
+</head>
+<body ng-app="movieMod">
+
+  <div ng-controller="movieCtrl">
+
+  <input type="text" ng-model="movieTitle">
+  <button ng-click="findMovie(movieTitle)">Find Movie</button>
+
+  <p>{{runTime}}</p>
+
+  </div>
+
+  // JQUERY
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+// ANGULAR
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+// JAVASCRIPT
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
