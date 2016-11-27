@@ -1,104 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- CSS -->
+    <!-- CSS -->
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
   <title>Movie App</title>
 </head>
+
 <body ng-app="movieMod">
-
-<div class="main" ng-controller="movieCtrl">
-
-<h1>Find a Movie!</h1>
-<form>
-  <fieldset>
-     <legend>Filters</legend>
-     <p>
-        <label>Genre:</label>
-        <select id="genre" ng-model="genre">
-          <option value = "28">Action</option>
-          <option value = "12">Adventure</option>
-          <option value = "16">Animation</option>
-          <option value = "35">Comedy</option>
-          <option value = "80">Crime</option>
-          <option value = "99">Documentary</option>
-          <option value = "18">Drama</option>
-          <option value = "10751">Family</option>
-          <option value = "27">Horror</option>
-          <option value = "10402">Music</option>
-          <option value = "9648">Mystery</option>
-          <option value = "10749">Romance</option>
-          <option value = "878">Science Fiction</option>
-          <option value = "10770">TV Movie</option>
-          <option value = "53">Thriller</option>
-          <option value = "10752">War</option>
-          <option value = "37">Western</option>
-        </select>
-     </p>
-     <p>
-        <label>Released between</label>
-        <input type="text" placeholder="year" ng-model="startYear" />
-        <span>and</span>
-        <input type="text" placeholder="year" ng-model="endYear" />
-     </p>
-       <p>
-          <label>Minimum Rating (1-10):</label>
-          <select id="rating" ng-model="rating">
-            <option value = "1">1+</option>
-            <option value = "2">2+</option>
-            <option value = "3">3+</option>
-            <option value = "4">4+</option>
-            <option value = "5">5+</option>
-            <option value = "6">6+</option>
-            <option value = "7">7+</option>
-            <option value = "8">8+</option>
-            <option value = "9">9+</option>
-          </select>
-       </p>
-       <p>
-          <label>Maximum Runtime:</label>
-          <select id="runtime" ng-model="runtime">
-            <option value = "60">60 minutes</option>
-            <option value = "75">75 minutes</option>
-            <option value = "90">90 minutes</option>
-            <option value = "105">105 mins</option>
-            <option value = "120">120 mins</option>
-            <option value = "135">135 mins</option>
-            <option value = "150">150 minutes</option>
-            <option value = "165">165 minutes</option>
-            <option value = "180">180 minutes</option>
-            <option value = "195">195 minutes</option>
-            <option value = "210">210 minutes</option>
-          </select>
-       </p>
-    </fieldset>
- </form>
-
-  <button ng-click="findMovie(genre, rating, startYear, endYear, runtime)">Find Movie</button>
-
-<!-- RESULTS -->
-    <div ng-repeat="movie in movies" class="col-md-6">
-        <div class="thumbnail">
-            <!-- img needs to be added to the end of https://image.tmdb.org/t/p/w500 -->
-            <img ng-src="https://image.tmdb.org/t/p/w500"+{{ movieImg }}>
-            <p class="title">{{ movie.title }}</p>
-        </div>
-    </div>
-</div>
+  <h1>Find a Movie!</h1>
+    <ng-view></ng-view>
 
   <!-- JQUERY -->
-  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
 <!-- ANGULAR -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.min.js"></script>
 
 <!-- JAVASCRIPT -->
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/ctrl1.js"></script>
-  <script type="text/javascript" src="js/ctrl2.js"></script>
-  <script type="text/javascript" src="js/factory.js"></script>
-
 
 </body>
 </html>
