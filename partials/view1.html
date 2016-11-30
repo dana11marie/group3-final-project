@@ -70,21 +70,12 @@
 <!-- RESULTS -->
     <div ng-repeat="movie in movies" class="col-md-6">
         <div class="thumbnail">
-<<<<<<< HEAD
-            <img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}">
-            <h2 class="title">{{ movie.title }}</p>
-            <p>{{ movie.release_date }}</p>
-            <p>{{ movie.overview }}</p>
-            <p>{{ movie.vote_average }}</p>
-            <a href="https://www.youtube.com/watch?v={{ trailerKey }}">Watch Trailer</a>
-=======
             <img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
             <p class="title">{{ movie.title }}</p>
             <p id= "date">{{ movie.release_date }}</p>
             <p id="summary">{{ movie.overview }}</p>
             <p id="raiting">{{ movie.vote_average }}</p>
 			<a href="https://www.youtube.com/watch?v={{ trailerKey }}">Watch Trailer</a>
->>>>>>> 1dff6229fd6f5cf5ad2e67862171c9372f994a24
         </div>
     </div>
 </div>
