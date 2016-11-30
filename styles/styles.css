@@ -1,7 +1,31 @@
+html, h1, h2, ul, li, h3, h4, p, body, div {
+  padding: 0;
+  border: 0;
+  margin: 0 ;
+}
 body {
   color: #10050B;
   background-color: #D79C96;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
+  /* font-family: Futura, "Trebuchet MS", Arial, sans-serif; */ }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif; }
+  
+div img {
+  max-width: auto;
+  max-height: 200px;
+  float: left;
+}
+# col-md-6 {
+display: block;
+ padding: 300px 0 200px 0; 
+ box-sizing: border-box;
+ float: right;
+ width: 600px;
+/*   word-wrap: break-word; */
+}
+p #date, #raiting, #summary, #title {
+  font-size: 16px;
+  font-family: Arial;
+  
+}
