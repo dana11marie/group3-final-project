@@ -68,14 +68,14 @@
   <button ng-click="findMovie(genre, rating, startYear, endYear, runtime)">Find Movie</button></br></br>
 
 <!-- RESULTS -->
-    <div ng-repeat="movie in movies" class="col-md-6">
+    <div ng-repeat="movie in movies | limitTo:quantity" class="col-md-6">
         <div class="thumbnail">
             <img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
             <p class="title">{{ movie.title }}</p>
             <p id= "date">{{ movie.release_date }}</p>
             <p id="summary">{{ movie.overview }}</p>
             <p id="raiting">{{ movie.vote_average }}</p>
-			<a href="https://www.youtube.com/watch?v={{ trailerKey }}">Watch Trailer</a>
+			<a href="https://www.youtube.com/watch?v={{ movie.trailerkey }}" target="blank"> Watch Trailer </a>
         </div>
     </div>
 </div>
