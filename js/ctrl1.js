@@ -10,7 +10,8 @@ app.controller('movieCtrl', function($http, $scope) {
         var movies = responseOne.data.results;
 
          $scope.movies = movies;
-         $scope.quantity = 6;
+         $scope.quantity = 10;
+        //  $scope.letterLimit = 200;
          console.log($scope.movies);
 
 
