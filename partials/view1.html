@@ -77,8 +77,8 @@
               <img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
               <p class="title">{{ movie.title }}</p>
               <p class= "date">{{ movie.release_date | date:longDate }}</p>
-              <button id="description">Description</button>
-              <p id="summary">{{ movie.overview }}</p>
+              <button class="description">Description</button>
+              <p class="summary">{{ movie.overview }}</p>
               <p class="rating">{{ movie.vote_average }}</p>
         <a href="https://www.youtube.com/watch?v={{ movie.trailerkey }}" target="blank"> Watch Trailer </a>
         </div>

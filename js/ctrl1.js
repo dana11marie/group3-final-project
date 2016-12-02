@@ -28,8 +28,9 @@ app.controller('movieCtrl', function($http, $scope) {
 
         // TOGGLE MOVIE DESCRIPTION
         $(document).ready(function(){
-          $('#description').click(function(){
-            $('#summary').hide().toggle();
+          $('.summary').hide();
+          $('.description').click(function(){
+            $(this).parent().children(".summary").toggle();
           });
         });
         // END TOGGLE MOVIE DESCRIPTION
