@@ -26,6 +26,14 @@ app.controller('movieCtrl', function($http, $scope) {
             });
         // END REQUEST FOR YOUTUBE KEY
 
+        // TOGGLE MOVIE DESCRIPTION
+        $(document).ready(function(){
+          $('#description').click(function(){
+            $('#summary').hide().toggle();
+          });
+        });
+        // END TOGGLE MOVIE DESCRIPTION
+
         });
     };
 });
