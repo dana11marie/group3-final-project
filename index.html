@@ -4,23 +4,24 @@
    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS -->
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:700" rel="stylesheet">
 
   <title>Movie App</title>
 </head>
 
-<body ng-app="movieMod">
-  <div class="header">
+<body id="gradient" ng-app="movieMod">
+  <div id="gradient" class="header">
     <div class="container">
       <h1>Find a Movie!</h1>
     </div>
     <!--Image-->
-    <img src="/Image/film-reel.jpg"/>
+    <img src="/Image/film-reel-ext-bw.jpg"/>
   </div>
 
     <ng-view></ng-view>
 
     <div class="footer">
-        <div class="container">
+        <div class="container" >
           <h2>Available for iPhone and Android.</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png" width="120px" />
           <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png" width="110px" />

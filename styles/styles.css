@@ -1,22 +1,36 @@
 html, body {
  margin: 0;
  padding: 0;
- font-family: 'Roboto', sans-serif;
+ font-family: 'Quattrocento Sans', sans-serif;
  width:100%;
 }
 
 .header {
- padding: 15px;
- width: 50%;
+ width: 100%;
+ background-color: #fff;
 }
 
 .header img {
    display: inline-block;
-}
+   max-width: 100%;
+  }
 
 .header h1 {
-   display: inline-block;
+   text-align: center;
    color: #000;
+   padding: 2% 0 2% 0;
+
+}
+
+#gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7882f+1,f7c331+100 */
+  background: #f7882f; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f7882f 1%, #f7c331 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #f7882f 1%,#f7c331 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #f7882f 1%,#f7c331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7882f', endColorstr='#f7c331',GradientType=1 ); /* IE6-9 */
+
+
 }
 
 .main {
@@ -36,8 +50,8 @@ html, body {
  position: relative;
  padding: 30px;
    margin-bottom:50px;
-   background-color: pink;
-   color: black;
+   background-color: #fff;
+   color: #6B7A8F;
    display: inline-block;
 }
 
@@ -55,21 +69,42 @@ html, body {
 
 .title,
 .date {
- color: black;
+ color: #6B7A8F;
  margin: 0;
  font-size: 18px;
    font-weight: 800;
 }
 
 .date {
-   color: #000;
+   color: #6B7A8F;
    font-size: 14px;
    font-weight: 200;
 }
+.button {
+	background-color:#F7882F;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	/*border:1px solid #18ab29;*/
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:11px 20px;
+	text-decoration:none;
+	}
+.button:hover {
+	background-color:#F7C331;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
 
 .rating {
- background-color: white;
- color: #000;
+ background-color: #6B7A8F;
+ color: #fff;
  font-size: 18px;
  font-weight: bold;
    border-radius: 50%;
@@ -92,6 +127,7 @@ html, body {
 .footer h2 {
  font-size: 24px;
  margin-bottom: 25px;
+ color: #6B7A8F;
 }
 
 .footer img {

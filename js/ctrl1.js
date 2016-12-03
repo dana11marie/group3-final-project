@@ -29,7 +29,7 @@ app.controller('movieCtrl', function($http, $scope) {
         // TOGGLE MOVIE DESCRIPTION
         $(document).ready(function(){
           $('.summary').hide();
-          $('.description').click(function(){
+          $('.button').click(function(){
             $(this).parent().children(".summary").toggle();
           });
         });

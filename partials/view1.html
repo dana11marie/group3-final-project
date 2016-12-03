@@ -66,7 +66,7 @@
     </fieldset>
  </form>
 
-  <button ng-click="findMovie(genre, rating, startYear, endYear, runtime)">Find Movies</button></br></br>
+  <button class="button" ng-click="findMovie(genre, rating, startYear, endYear, runtime)">Find Movies</button></br></br>
  </div>
 
 <!-- RESULTS -->
@@ -77,7 +77,7 @@
             <img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
                 <p class="title">{{ movie.title }}</p>
                 <p class= "date">{{ movie.release_date | date:longDate }}</p>
-                <button class="description">Description</button>
+                <button class="button">Description</button>
                 <p class="summary">{{ movie.overview }}</p>
                 <p class="rating">{{ movie.vote_average }} ★</p>
                 <a href="https://www.youtube.com/watch?v={{ movie.trailerkey }}" target="blank"> Watch Trailer </a>
