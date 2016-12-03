@@ -38,9 +38,10 @@ html, body {
 }
 
 .thumbnail {
- border: 10px;
+ border-width: 2px;
   border-radius: 5px;
-  border-color: #6b7a8f;
+  border-color: #6B7A8F;
+  box-shadow: 8px 8px 5px #888888;
  position: relative;
  padding: 30px;
    margin-bottom:50px;
@@ -51,6 +52,7 @@ html, body {
 
 .thumbnail img {
    margin-top: 10px;
+   box-shadow: 8px 8px 5px #888888;
  margin-bottom: 30px;
   border-radius: 5px;
  max-width: 50%;
@@ -150,6 +152,3 @@ html, body {
     outline: 0;
     max-width: 60%;
 }
-
-
-
