@@ -37,6 +37,7 @@ html, body {
    margin-bottom:50px;
    background-color: pink;
    color: black;
+   display: inline-block;
 }
 
 .summary {

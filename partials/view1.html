@@ -44,8 +44,6 @@
             <option value = "5">5+</option>
             <option value = "6">6+</option>
             <option value = "7">7+</option>
-            <option value = "8">8+</option>
-            <option value = "9">9+</option>
           </select>
        </p>
        <p>
@@ -72,16 +70,21 @@
  </div>
 
 <!-- RESULTS -->
+<!-- <div class="grid">
+<div class="grid-item"> -->
     <div ng-repeat="movie in movies | limitTo:quantity" class="col-md-6">
         <div class="thumbnail">
-              <img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
-              <p class="title">{{ movie.title }}</p>
-              <p class= "date">{{ movie.release_date | date:longDate }}</p>
-              <button class="description">Description</button>
-              <p class="summary">{{ movie.overview }}</p>
-              <p class="rating">{{ movie.vote_average }}</p>
-        <a href="https://www.youtube.com/watch?v={{ movie.trailerkey }}" target="blank"> Watch Trailer </a>
+            <img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
+                <p class="title">{{ movie.title }}</p>
+                <p class= "date">{{ movie.release_date | date:longDate }}</p>
+                <button class="description">Description</button>
+                <p class="summary">{{ movie.overview }}</p>
+                <p class="rating">{{ movie.vote_average }} ★</p>
+                <a href="https://www.youtube.com/watch?v={{ movie.trailerkey }}" target="blank"> Watch Trailer </a>
         </div>
     </div>
+<!-- </div>
+</div> -->
+
 </div>
 </div>
