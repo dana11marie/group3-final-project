@@ -35,13 +35,6 @@ app.controller('movieCtrl', function($http, $scope) {
         });
         // END TOGGLE MOVIE DESCRIPTION
 
-        // // MASONRY TEST
-        // $('.grid').masonry({
-        //   itemSelector: '.grid-item',
-        //   columnWidth: '.grid-sizer',
-        //   percentPosition: true
-        // });
-        // // END MASONRY TEST
 
         });
     };
