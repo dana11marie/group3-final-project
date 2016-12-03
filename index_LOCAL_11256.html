@@ -4,32 +4,26 @@
    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS -->
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
-	
+	  <!-- JQUERY -->
 	  <!-- ANGULAR -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.min.js"></script>
-	  <!-- JQUERY -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
-
   <title>Movie App</title>
 </head>
 
-<body id="gradient" ng-app="movieMod">
-  <div id="gradient" class="header">
+<body ng-app="movieMod">
+  <div class="header">
     <div class="container">
       <h1>Find a Movie!</h1>
     </div>
-    <!--Image-->
-    <img src="/Image/film-reel-popcorn.jpg"/>
   </div>
 
     <ng-view></ng-view>
 
     <div class="footer">
-        <div class="container" >
+        <div class="container">
           <h2>Available for iPhone and Android.</h2>
           <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png" width="120px" />
           <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png" width="110px" />
@@ -40,6 +34,5 @@
 <!-- JAVASCRIPT -->
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/ctrl1.js"></script>
-
 </body>
 </html>
