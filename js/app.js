@@ -7,3 +7,4 @@ app.config(function($routeProvider){
     templateUrl: 'partials/view1.html'
   });
 });
+

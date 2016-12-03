@@ -18,23 +18,29 @@ app.controller('movieCtrl', function($http, $scope) {
       // END MOVIES REQUEST BASED ON FILTERS
 
         // REQUEST FOR YOUTUBE KEY
-        movies.forEach(function(movie){
-            $http.get('https://api.themoviedb.org/3/movie/' + movie.id + '/videos?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US')
-                 .then(function successCallback(responseTwo) {
-                 movie.trailerkey = responseTwo.data.results[0].key;
-                 });
-            });
+//        movies.forEach(function(movie){
+  //          $http.get('https://api.themoviedb.org/3/movie/' + movie.id + '/videos?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US')
+    //             .then(function successCallback(responseTwo) {
+      //           movie.trailerkey = responseTwo.data.results[0].key;
+        //         });
+
+          //  });
         // END REQUEST FOR YOUTUBE KEY
 
-        // TOGGLE MOVIE DESCRIPTION
+		
+/*         // TOGGLE MOVIE DESCRIPTION
         $(document).ready(function(){
           $('.summary').hide();
           $('.description').click(function(){
             $(this).parent().children(".summary").toggle();
           });
         });
-        // END TOGGLE MOVIE DESCRIPTION
+        // END TOGGLE MOVIE DESCRIPTION */
 
         });
+		
     };
+
+
+
 });

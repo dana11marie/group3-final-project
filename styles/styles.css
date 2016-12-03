@@ -39,10 +39,12 @@ html, body {
    color: black;
 }
 
-.summary {
- /*overflow: scroll;
- height: 70px;*/
-}
+/* .summary {
+border: 1px solid green;
+margin: 0 auto;
+max-width: 80%;
+ border-radius: 5px;
+} */
 
 .thumbnail img {
    margin-top: 10px;
@@ -95,3 +97,16 @@ html, body {
 .footer img {
    margin: 0 10px;
 }
+.modal {
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+    z-index: 1050;
+    outline: 0;
+    max-width: 60%;
+}
+
+
+
