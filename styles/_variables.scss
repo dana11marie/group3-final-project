@@ -1,19 +1,12 @@
-// COLORS
-$offblack: #10050B;
-$offwhite: #e8e8e8;
-$purple-dk: #451F59;
-$purple: #754473;
-$pink: #AA6383;
-$peach: #D79C96;
+//COLORS
+$white: #ffffff;
+$black: #000000;
+$light-gray: #f2f2f2;
+$apple-core-gray: #DCC7AA;
+$blueberry: #6B7A8F;
+$apricot-orange: #F7882F;
+$citrus-yellow: #F7C331;
 
-$grey: #454545;
-$gray: $grey;
-
-$color-base: $offblack;
-$color-border: $offblack;
-$color-highlight: $purple-dk;
-$color-background: $offwhite;
-
-// FONTS - try not to have more than two font-stacks
-$font-base: Futura, 'Trebuchet MS', Arial, sans-serif;
-$font-heading: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+//FONTS
+$font-stack: 'Roboto', 'Arial', sans-serif;
+$font-base: 14px;

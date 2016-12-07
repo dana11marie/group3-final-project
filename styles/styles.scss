@@ -1,12 +1,157 @@
 @import "variables";
 @import "mixins";
 
-// body {
-//   color: $color-base;
-//   background-color: $peach;
-//   font-family: $font-base;
-// }
-//
-// h1, h2, h3, h4, h5, h6 {
-//   font-family: $font-heading;
-// }
+html, body {
+ margin: 0;
+ padding: 0;
+ font-family: 'Roboto', sans-serif;
+ width:100%;
+}
+
+.header {
+ width: 100%;
+ background-color: $black;
+}
+
+.header img {
+   display: inline-block;
+   max-width: 100%;
+  }
+
+.header h1 {
+   text-align: center;
+   color: $black;
+   padding: 4% 0 4% 0;
+
+}
+
+#gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7882f+1,f7c331+100 */
+  background: $apricot-orange; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f7882f 1%, #f7c331 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #f7882f 1%,#f7c331 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #f7882f 1%,#f7c331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7882f', endColorstr='#f7c331',GradientType=1 ); /* IE6-9 */
+}
+
+.main {
+ background-color: $light-gray;
+ padding: 40px 0;
+ border-radius: 5px;
+}
+
+.thumbnail {
+ border-width: 2px;
+  border-radius: 5px;
+  border-color: $blueberry;
+  box-shadow: 8px 8px 5px #888888;
+ position: relative;
+ padding: 30px;
+   margin-bottom:50px;
+   background-color: #fff;
+   color: #6B7A8F;
+   display: inline-block;
+}
+
+.thumbnail img {
+   margin-top: 10px;
+   box-shadow: 8px 8px 5px #888888;
+ margin-bottom: 30px;
+  border-radius: 5px;
+ max-width: 50%;
+}
+
+.title,
+.date {
+ color: $blueberry;
+ margin: 0;
+ font-size: 18px;
+   font-weight: 800;
+}
+
+.date {
+   color: $blueberry;
+   font-size: 14px;
+   font-weight: 200;
+}
+
+.button {
+	background-color:$blueberry;
+	border-radius:4px;
+	border:1px solid $white;
+	display:inline-block;
+	color: white;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+}
+
+.button:hover {
+	background-color: #7c8c9c;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-btn-info {
+	background-color:$apricot-orange;
+	border-radius:4px;
+	border:1px solid $white;
+	display:inline-block;
+	color: white;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+}
+
+.btn-btn-info:hover {
+	background-color: #f99d53;
+}
+.btn-btn-info:active {
+	position:relative;
+	top:1px;
+}
+
+.rating {
+ background-color: $blueberry;
+ color: white;
+ font-size: 18px;
+ font-weight: bold;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   font-weight: 200;
+   height: 80px;
+   line-height: 80px;
+   text-align: center;
+   width: 80px;
+ position: absolute;
+ top: -40px;
+ right: 20px;
+}
+
+.footer {
+ text-align: center;
+ margin: 10px 0 50px;
+}
+
+.footer h2 {
+ font-size: 24px;
+ margin-bottom: 25px;
+ color: black;
+ padding: 2% 0 2% 0;
+}
+
+.footer img {
+   margin: 0 10px;
+}
+.modal {
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+    z-index: 1050;
+    outline: 0;
+    max-width: 60%;
+}
