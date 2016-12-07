@@ -4,9 +4,9 @@
 <div class="form">
 <form>
   <fieldset>
-     <legend>Filters</legend>
+     <legend>Make Your Choice</legend>
      <p>
-        <label>Genre:</label>
+        <label>What type of movie do you want to watch?</label>
         <select id="genre" ng-model="genre">
           <option value = "28">Action</option>
           <option value = "12">Adventure</option>
@@ -28,13 +28,13 @@
         </select>
      </p>
      <p>
-        <label>Released between</label>
+        <label>What decade are you in the mood for?</label>
         <input type="text" placeholder="(yyyy)" ng-model="startYear" />
         <span>and</span>
         <input type="text" placeholder="(yyyy)" ng-model="endYear" />
      </p>
        <p>
-          <label>Minimum Rating (1-10):</label>
+          <label>Out of a 1-10 star scale, what rating do you want?</label>
           <select id="rating" ng-model="rating">
             <option value = "1">1+</option>
             <option value = "2">2+</option>
@@ -46,7 +46,7 @@
           </select>
        </p>
        <p>
-          <label>Maximum Runtime:</label>
+          <label>How much time do you have?</label>
           <select id="runtime" ng-model="runtime">
             <option value = "60">60 minutes</option>
             <option value = "75">75 minutes</option>
