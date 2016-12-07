@@ -45,7 +45,8 @@ html, body {
   margin-bottom: 50px;
   background-color: #fff;
   color: #6B7A8F;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
 
 .thumbnail img {
   margin-top: 10px;

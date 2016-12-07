@@ -22,6 +22,7 @@ html, body {
    text-align: center;
    color: $black;
    padding: 4% 0 4% 0;
+   $font-base: 150%;
 
 }
 
@@ -51,6 +52,7 @@ html, body {
    background-color: #fff;
    color: #6B7A8F;
    display: inline-block;
+   text-align: center;
 }
 
 .thumbnail img {
