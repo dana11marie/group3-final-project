@@ -101,6 +101,9 @@ html, body {
   position: relative;
   top: 1px; }
 
+.runtime {
+  font-style: italic; }
+
 .rating {
   background-color: #6B7A8F;
   color: white;

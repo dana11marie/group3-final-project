@@ -1,12 +1,20 @@
 <div class="main">
 <div class="container">
 
+<p> Not sure what to watch while your body carves the perfect imprint into your couch? Time passes quickly with something different to watch. Simply input your choices using the form below and you'll be reminded of or introduced to 10 movies or tv shows of days' past. Don't like what you see? Simply play again, it's that easy. </p>
 <div class="form">
 <form>
   <fieldset>
-     <legend>Make Your Choice</legend>
+     <legend>Make Your Choices</legend>
      <p>
-        <label>What type of movie do you want to watch?</label>
+       <label>What do you want to watch?</label>
+       <select id="type" ng-model="type">
+         <option value = "tv">TV Show</option>
+         <option value = "movie">Movie</option>
+       </select>
+    </p>
+     <p>
+        <label>What genre do you want to watch?</label>
         <select id="genre" ng-model="genre">
           <option value = "28">Action</option>
           <option value = "12">Adventure</option>
@@ -64,7 +72,7 @@
     </fieldset>
  </form>
 
-  <button class="button" ng-click="findMovie(genre, rating, startYear, endYear, runtime)">Find Movies</button></br></br>
+  <button class="button" ng-click="findMovie(type, genre, rating, startYear, endYear, runtime)">Find Movies</button></br></br>
  </div>
  <!-- END FILTERS -->
 
@@ -72,9 +80,10 @@
 		<div ng-repeat="movie in movies | limitTo:quantity" class="col-md-6">
 			<div class="thumbnail">
 				<img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
-				<p class="title">{{ movie.title }}</p>
-				<p class= "date">{{ movie.release_date | date:longDate }}</p>
-				<p class="rating">{{ movie.vote_average }}★</p>
+				<p class="title">{{ movie.title }} {{movie.name}}</p>
+				<p class= "date">{{ movie.release_date | date:longDate }}{{ movie.first_air_date | date:longDate }}</p>
+        <p class="runtime">{{ movie.runtime }} minutes</p>
+				<p class="rating">{{ movie.vote_average | number: 1 }}★</p>
         <!-- Modal -->
 				<button type="button" class="btn-btn-info" data-toggle="modal" data-target="#example{{$index}}">Description</button>
 			    <div class="modal" id="example{{$index}}">
