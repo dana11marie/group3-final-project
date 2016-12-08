@@ -35,6 +35,10 @@ html, body {
   padding: 40px 0;
   border-radius: 5px; }
 
+.form {
+  margin: auto;
+  position: relative; }
+
 .thumbnail {
   border-width: 2px;
   border-radius: 5px;

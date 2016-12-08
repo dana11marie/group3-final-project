@@ -82,7 +82,7 @@
 				<img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
 				<p class="title">{{ movie.title }} {{movie.name}}</p>
 				<p class= "date">{{ movie.release_date | date:longDate }}{{ movie.first_air_date | date:longDate }}</p>
-        <p class="runtime">{{ movie.runtime }} minutes</p>
+        <p class="runtime">{{ movie.runtime }}{{ movie.runtimeTwo }} minutes</p>
 				<p class="rating">{{ movie.vote_average | number: 1 }}★</p>
         <!-- Modal -->
 				<button type="button" class="btn-btn-info" data-toggle="modal" data-target="#example{{$index}}">Description</button>
