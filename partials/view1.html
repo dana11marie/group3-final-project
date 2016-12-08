@@ -92,7 +92,8 @@
 						<h4 class="modal-title">{{ movie.title }}</h4>
 					</div>
 					<div class="modal-body">
-						<p class="summary">{{ movie.overview }}</p>
+            <youtube-video video-id="movie.ytlink"></youtube-video>
+             <p class="summary">{{ movie.overview }}</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn-btn-info" data-dismiss="modal">Close</button>
