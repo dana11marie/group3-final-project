@@ -72,20 +72,20 @@
     </fieldset>
  </form>
 
-  <button class="button" ng-click="findMovie(type, genre, rating, startYear, endYear, runtime)">Find Movies</button></br></br>
+  <button class="button" ng-click="findMovie(type, genre, rating, startYear, endYear, runtime)">Find Something to Watch</button></br></br>
  </div>
  <!-- END FILTERS -->
 
 		<!-- RESULTS -->
 		<div ng-repeat="movie in movies | limitTo:quantity" class="col-md-6">
 			<div class="thumbnail">
-				<img ng-src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt id = "posters">
+				<img ng-src="https://image.tmdb.org/t/p/w500//{{ movie.poster_path }}" alt id = "posters">
 				<p class="title">{{ movie.title }} {{movie.name}}</p>
 				<p class= "date">{{ movie.release_date | date:longDate }}{{ movie.first_air_date | date:longDate }}</p>
         <p class="runtime">{{ movie.runtime }}{{ movie.runtimeTwo }} minutes</p>
 				<p class="rating">{{ movie.vote_average | number: 1 }}★</p>
         <!-- Modal -->
-				<button type="button" class="btn-btn-info" data-toggle="modal" data-target="#example{{$index}}">Description</button>
+				<button type="button" class="btn-btn-info" data-toggle="modal" data-target="#example{{$index}}">See More</button>
 			    <div class="modal" id="example{{$index}}">
 			  	<div class="modal-content">
 					<div class="modal-header">
@@ -101,7 +101,7 @@
 				  </div> <!--end modal content-->
 			    </div> <!--modal fade-->
 					<!-- End Modal -->
-          <a href="https://www.youtube.com/watch?v={{ movie.trailerkey }}" target="blank"><button class="btn-btn-info">Watch Trailer</button></a>
+          <!-- <a href="https://www.youtube.com/watch?v={{ movie.trailerkey }}" target="blank"><button class="btn-btn-info">Watch Trailer</button></a> -->
 
 		</div><!--end thumbnail-->
      </div> <!--end results-->
