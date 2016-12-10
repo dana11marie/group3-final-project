@@ -41,7 +41,12 @@ html, body {
   position: relative;
   border: 2px solid;
   border-radius: 25px;
+<<<<<<< HEAD
   box-shadow: 10px 10px 5px #888888; }
+=======
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 10%; }
+>>>>>>> 36c22e1f06da3beae2e60f46978fa09058f8996d
 
 legend {
   margin: 0 auto;
@@ -88,7 +93,12 @@ legend {
   font-size: 15px;
   padding: 6px 15px;
   text-decoration: none;
+<<<<<<< HEAD
   margin-left: 40%; }
+=======
+  margin-left: 40%;
+  margin-bottom: 3%; }
+>>>>>>> 36c22e1f06da3beae2e60f46978fa09058f8996d
 
 .button:hover {
   background-color: #7c8c9c; }
@@ -144,6 +154,7 @@ legend {
 .footer img {
   margin: 0 10px; }
 
+<<<<<<< HEAD
 /* .modal {
     position: fixed;
     top: 20%;
@@ -154,3 +165,13 @@ legend {
     outline: 0;
     max-width: 60%;
 }*/
+=======
+.modal {
+  position: fixed;
+  z-index: 1050;
+  width: 60%;
+  height: auto; }
+
+.modal header {
+  color: #DC7633; }
+>>>>>>> 36c22e1f06da3beae2e60f46978fa09058f8996d
