@@ -34,11 +34,21 @@ html, body {
 .main {
   background-color: #f2f2f2;
   padding: 40px 0;
-  border-radius: 5px; }
+  border-radius: 5px;}
 
 .form {
-  margin: auto;
-  position: relative; }
+  position: relative;
+  border: 2px solid;
+  border-radius: 25px;
+  background-color: #E5E8E8;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 30px;
+  }
+
+legend {
+	text-align:center;
+    padding: 10px 0 10px 0;
+}  
 
 .thumbnail {
   border-width: 2px;
@@ -80,7 +90,10 @@ html, body {
   color: white;
   font-size: 15px;
   padding: 6px 15px;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-left: 40%; 
+  margin-bottom: 10px; 
+   }
 
 .button:hover {
   background-color: #7c8c9c; }
@@ -137,8 +150,10 @@ html, body {
 
 .footer img {
   margin: 0 10px; }
-
-.modal {
+iframe{
+	width: 45%;
+	}
+/* .modal {
   position: fixed;
   top: 20%;
   right: 20%;
@@ -146,4 +161,4 @@ html, body {
   left: 20%;
   z-index: 1050;
   outline: 0;
-  max-width: 60%; }
+  max-width: 60%; } */

@@ -43,7 +43,7 @@ html, body {
 }
 
 .form {
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -93,6 +93,7 @@ html, body {
 	font-size:15px;
 	padding:6px 15px;
 	text-decoration:none;
+	margin-left: 35%;
 }
 
 .button:hover {
