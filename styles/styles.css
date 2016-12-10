@@ -38,7 +38,10 @@ html, body {
 
 .form {
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  border: 2px solid;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #888888; }
 
 legend {
   margin: 0 auto;
@@ -85,7 +88,7 @@ legend {
   font-size: 15px;
   padding: 6px 15px;
   text-decoration: none;
-  margin-left: 35%; }
+  margin-left: 40%; }
 
 .button:hover {
   background-color: #7c8c9c; }
@@ -135,20 +138,19 @@ legend {
   margin: 10px 0 50px; }
 
 .footer h2 {
-  font-size: 24px;
-  margin-bottom: 25px;
-  color: black;
-  padding: 2% 0 2% 0; }
+  font-size: 18px;
+  color: black; }
 
 .footer img {
   margin: 0 10px; }
 
-.modal {
-  position: fixed;
-  top: 20%;
-  right: 20%;
-  bottom: 0;
-  left: 20%;
-  z-index: 1050;
-  outline: 0;
-  max-width: 60%; }
+/* .modal {
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+    z-index: 1050;
+    outline: 0;
+    max-width: 60%;
+}*/

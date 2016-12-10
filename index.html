@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
-    <!-- CSS -->
+       <!-- CSS -->
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <link href="styles/contactUsForm.css" type="text/css" rel="stylesheet" />
 	  <!-- ANGULAR -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.min.js"></script>
@@ -33,6 +34,24 @@
     <div class="footer">
         <div class="container" >
           <h2>©2016 Couch Potato, Inc </h2>
+          <!--START POPUP CONTACT FORM-->
+    <div id="contactUs">Contact Us</div>
+
+    <div id="contactUsForm">
+
+      <h1>Have a question, comment, or concern?</h1>
+      <small>We'll get back to you as quickly as possible.</small>
+
+      <form action="#">
+        <input placeholder="Name" type="text" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Subject" type="text" required />
+        <textarea placeholder="Comment"></textarea>
+        <input class="formBtn" type="submit" />
+        <input class="formBtn" type="reset" />
+      </form>
+    </div>
+    <!--END POPUP CONTACT FORM-->
           <img src="/Images/couch-potato-logo.png" width="220px" />
           </div>
       </div>
