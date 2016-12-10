@@ -41,12 +41,8 @@ html, body {
   position: relative;
   border: 2px solid;
   border-radius: 25px;
-<<<<<<< HEAD
-  box-shadow: 10px 10px 5px #888888; }
-=======
   box-shadow: 10px 10px 5px #888888;
   margin-bottom: 10%; }
->>>>>>> 36c22e1f06da3beae2e60f46978fa09058f8996d
 
 legend {
   margin: 0 auto;
@@ -93,12 +89,8 @@ legend {
   font-size: 15px;
   padding: 6px 15px;
   text-decoration: none;
-<<<<<<< HEAD
-  margin-left: 40%; }
-=======
   margin-left: 40%;
   margin-bottom: 3%; }
->>>>>>> 36c22e1f06da3beae2e60f46978fa09058f8996d
 
 .button:hover {
   background-color: #7c8c9c; }
@@ -154,24 +146,19 @@ legend {
 .footer img {
   margin: 0 10px; }
 
-<<<<<<< HEAD
-/* .modal {
-    position: fixed;
-    top: 20%;
-    right: 20%;
-    bottom: 0;
-    left: 20%;
-    z-index: 1050;
-    outline: 0;
-    max-width: 60%;
-}*/
-=======
+.modal-header {
+  background-color: #DC7633; }
+
+.modal-title {
+  color: white; }
+
 .modal {
   position: fixed;
   z-index: 1050;
-  width: 60%;
-  height: auto; }
+  margin: 100px 100px 0 100px; }
 
-.modal header {
-  color: #DC7633; }
->>>>>>> 36c22e1f06da3beae2e60f46978fa09058f8996d
+iframe {
+  height: 250px;
+  width: 360px;
+  float: left;
+  display: block; }
