@@ -1,7 +1,7 @@
 /* global YT */
 angular.module('youtube-embed', [])
 .service ('youtubeEmbedUtils', ['$window', '$rootScope', function ($window, $rootScope) {
-    var Service = {}
+    var Service = {};
 
     // adapted from http://stackoverflow.com/a/5831191/1614967
     var youtubeRegexp = /https?:\/\/(?:[0-9A-Z-]+\.)?(?:youtu\.be\/|youtube(?:-nocookie)?\.com\S*[^\w\s-])([\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:['"][^<>]*>|<\/a>))[?=&+%\w.-]*/ig;
@@ -88,13 +88,13 @@ angular.module('youtube-embed', [])
         $rootScope.$apply(function () {
             Service.ready = true;
         });
-    };
+    }
 
     // If the library isn't here at all,
     if (typeof YT === "undefined") {
         // ...grab on to global callback, in case it's eventually loaded
         $window.onYouTubeIframeAPIReady = applyServiceIsReady;
-        console.log('Unable to find YouTube iframe library on this page.')
+        console.log('Unable to find YouTube iframe library on this page.');
     } else if (YT.loaded) {
         Service.ready = true;
     } else {
@@ -198,7 +198,7 @@ angular.module('youtube-embed', [])
 
                     scope.player = createPlayer();
                 }
-            };
+            }
 
             var stopWatchingReady = scope.$watch(
                 function () {
@@ -247,6 +247,7 @@ angular.module('youtube-embed', [])
             scope.$on('$destroy', function () {
                 scope.player && scope.player.destroy();
             });
+
         }
     };
 }]);

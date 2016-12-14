@@ -1,7 +1,11 @@
 <div class="main">
 <div class="container">
 
+<!-- INTRO -->
 <p class="intro"> Not sure what to watch while your body carves the perfect imprint into your couch? Time passes quickly with something different to watch. Simply input your choices using the form below and you'll be reminded of or introduced to 10 movies or tv shows of days' past. Don't like what you see? Simply play again, it's that easy. </p>
+<!-- END INTRO -->
+
+<!-- FORM -->
 <div class="form">
 <form>
   <fieldset>
@@ -74,9 +78,10 @@
 
   <button class="button" ng-click="findMovie(type, genre, rating, startYear, endYear, runtime)">Find Something to Watch</button>
  </div>
- <!-- END FILTERS -->
+ <!-- END FORM -->
 
-		<!-- RESULTS -->
+
+<!-- RESULTS -->
 		<div ng-repeat="movie in movies | limitTo:quantity" class="col-md-6">
 			<div class="thumbnail">
 				<img ng-src="https://image.tmdb.org/t/p/w500//{{ movie.poster_path }}" alt id = "posters">
@@ -84,14 +89,14 @@
 				<p class= "date">{{ movie.release_date | date:longDate }}{{ movie.first_air_date | date:longDate }}</p>
         <p class="runtime">{{ movie.runtime }}{{ movie.runtimeTwo }} minutes</p>
 				<p class="rating">{{ movie.vote_average | number: 1 }}★</p>
-        <!-- Modal -->
+    <!-- Modal -->
 				<button type="button" class="btn-btn-info" data-toggle="modal" data-target="#example{{$index}}">See More</button>
 			    <div class="modal" id="example{{$index}}">
 			  	<div class="modal-content">
 					<div class="modal-header">
 						<h4 class="modal-title">{{ movie.title }}</h4>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body" id="yt-player">
             <youtube-video video-id="movie.ytlink"></youtube-video>
             <p class="summary">{{ movie.overview }}</p>
 		     		</div>
@@ -105,3 +110,4 @@
      </div> <!--end results-->
 	</div> <!--end containter-->
 </div><!--end main-->
+<!-- END RESULTS -->
