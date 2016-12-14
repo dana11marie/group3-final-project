@@ -4,7 +4,7 @@
 html, body {
  margin: 0;
  padding: 0;
- font-family: 'Indie Flower', cursive;
+ font-family: 'Muli', sans-serif;
  width:100%;
 }
 
@@ -50,10 +50,16 @@ html, body {
   box-shadow: 10px 10px 5px #888888;
   margin-bottom: 10%;
   }
-
+ .form-text {
+  padding-left: 3%;
+ }
+.intro{
+  padding-bottom: 20px;
+}
 legend {
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 5px;
 }
 .thumbnail {
  border-width: 2px;
@@ -77,7 +83,9 @@ legend {
  max-width: 60%;
 
 }
-
+.title{
+font-weight: bold;
+}
 .title,
 .date {
  color: $blueberry;
@@ -141,13 +149,13 @@ legend {
  color: white;
  font-size: 18px;
  font-weight: bold;
-   border-radius: 50%;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-   font-weight: 200;
-   height: 80px;
-   line-height: 80px;
-   text-align: center;
-   width: 80px;
+ border-radius: 50%;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+ font-weight: 200;
+ height: 80px;
+ line-height: 80px;
+ text-align: center;
+ width: 80px;
  position: absolute;
  top: -40px;
  right: 20px;
@@ -171,6 +179,7 @@ background-color:#DC7633;
 }
 .modal-title {
 color: white;
+font-weight: bold;
 }
 
 .modal {

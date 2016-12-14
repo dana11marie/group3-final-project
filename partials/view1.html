@@ -1,7 +1,7 @@
 <div class="main">
 <div class="container">
 
-<p> Not sure what to watch while your body carves the perfect imprint into your couch? Time passes quickly with something different to watch. Simply input your choices using the form below and you'll be reminded of or introduced to 10 movies or tv shows of days' past. Don't like what you see? Simply play again, it's that easy. </p>
+<p class="intro"> Not sure what to watch while your body carves the perfect imprint into your couch? Time passes quickly with something different to watch. Simply input your choices using the form below and you'll be reminded of or introduced to 10 movies or tv shows of days' past. Don't like what you see? Simply play again, it's that easy. </p>
 <div class="form">
 <form>
   <fieldset>
@@ -9,11 +9,9 @@
      <div class="form-text">
 	 <p>
        <label>What do you want to watch?</label>
-       <select id="type" ng-model="type">
-         <option value = "tv">TV Show</option>
-         <option value = "movie">Movie</option>
-       </select>
-    </p>
+         <input type="radio" ng-model="type" value= "tv">TV Show
+         <input type="radio" ng-model="type" value = "movie">Movie
+       </p>
      <p>
         <label>What genre do you want to watch?</label>
         <select id="genre" ng-model="genre">

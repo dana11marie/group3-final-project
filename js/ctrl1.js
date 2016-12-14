@@ -18,30 +18,22 @@ app.controller('movieCtrl', function($http, $scope) {
       // END MOVIES REQUEST BASED ON FILTERS
 
       //   // VERSION 1 REQUEST FOR YOUTUBE KEY
-      //  movies.forEach(function(movie){
-      //      $http.get('https://api.themoviedb.org/3/'+ type +'/' + movie.id + '/videos?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US')
-      //           .then(function successCallback(responseTwo) {
-      //           movie.trailerkey = responseTwo.data.results[0].key;
-      //           });
-       //
-      //      });
+      $scope.movies.forEach(function(movie){
+            $http.get('https://api.themoviedb.org/3/'+ type +'/' + movie.id + '/videos?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US')
+                 .then(function successCallback(responseTwo) {
+                 movie.ytlink =  responseTwo.data.results[0].key;
+                 });
+      
+            });
       //   // END VERSION 1 REQUEST FOR YOUTUBE KEY
 
-      // VERSION 2 REQUEST FOR YOUTUBE KEY
-     $scope.movies.forEach(function(movie){
-       $http.get('https://api.themoviedb.org/3/movie/' + movie.id + '/videos?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US')
-       .then(function successCallback(responseTwo) {
-         movie.ytlink =  responseTwo.data.results[0].key;
-       });
-      });
-       //   // END VERSION 2 REQUEST FOR YOUTUBE KEY
 
                 // REQUEST FOR ADDITIONAL DETAILS
                movies.forEach(function(movie){
                   $http.get('https://api.themoviedb.org/3/'+ type +'/'+ movie.id +'?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US&append_to_response=runtime')
                        .then(function successCallback(responseThree) {
                        movie.runtime = responseThree.data.runtime;
-                       movie.runtimeTwo = responseThree.data.episode_run_time[0];
+                       movie.runtimeTwo = responseThree.dazta.episode_run_time[0];
                        });
                   });
                // END REQUEST FOR ADDITIONAL DETAILS

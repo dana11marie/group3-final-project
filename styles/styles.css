@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Muli', sans-serif;
   width: 100%; }
 
 .header {
@@ -44,9 +44,16 @@ html, body {
   box-shadow: 10px 10px 5px #888888;
   margin-bottom: 10%; }
 
+.form-text {
+  padding-left: 3%; }
+
+.intro {
+  padding-bottom: 20px; }
+
 legend {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 5px; }
 
 .thumbnail {
   border-width: 2px;
@@ -67,6 +74,9 @@ legend {
   margin-bottom: 30px;
   border-radius: 5px;
   max-width: 60%; }
+
+.title {
+  font-weight: bold; }
 
 .title,
 .date {
@@ -150,7 +160,8 @@ legend {
   background-color: #DC7633; }
 
 .modal-title {
-  color: white; }
+  color: white;
+  font-weight: bold; }
 
 .modal {
   position: fixed;
