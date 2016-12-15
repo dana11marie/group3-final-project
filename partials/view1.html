@@ -12,12 +12,12 @@
      <legend>Make Your Choice</legend>
      <div class="form-text">
 	 <p>
-       <label>* What do you want to watch?</label>
+       <label>What do you want to watch?</label>
          <input type="radio" ng-model="type" value= "tv">TV Show
          <input type="radio" ng-model="type" value = "movie">Movie
        </p>
      <p>
-        <label>* What genre do you want to watch?</label>
+        <label>What genre do you want to watch?</label>
         <select id="genre" ng-model="genre">
           <option value = "28">Action</option>
           <option value = "12">Adventure</option>
@@ -39,13 +39,13 @@
         </select>
      </p>
      <p>
-        <label>* What decade are you in the mood for?</label>
+        <label>What decade are you in the mood for?</label>
         <input type="text" placeholder="(yyyy)" ng-model="startYear" />
         <span>and</span>
         <input type="text" placeholder="(yyyy)" ng-model="endYear" />
      </p>
        <p>
-          <label>* Out of a 1-10 star scale, what rating do you want?</label>
+          <label>Out of a 1-10 star scale, what rating do you want?</label>
           <select id="rating" ng-model="rating">
             <option value = "1">1+ ★</option>
             <option value = "2">2+ ★</option>
@@ -57,7 +57,7 @@
           </select>
        </p>
        <p>
-          <label>* How much time do you have?</label>
+          <label>How much time do you have?</label>
           <select id="runtime" ng-model="runtime">
             <option value = "60">60 mins</option>
             <option value = "75">75 mins</option>
@@ -70,13 +70,16 @@
             <option value = "180">180 mins</option>
             <option value = "195">195 mins</option>
             <option value = "210">210 mins</option>
-          </select>
-       </p>
+			</select>
+		    <p class="required">★ All fields required</p>
+			</p>
+
 	   </div><!--end form-text-->
     </fieldset>
  </form>
 
   <button class="button" ng-click="findMovie(type, genre, rating, startYear, endYear, runtime)">Find Something to Watch</button>
+ 
  </div>
  <!-- END FORM -->
 
