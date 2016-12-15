@@ -32,7 +32,7 @@ app.controller('movieCtrl', function($http, $scope) {
         $http.get('https://api.themoviedb.org/3/'+ type +'/'+ movie.id +'?api_key=246abf971b8f4d88b4c901eeacc07819&language=en-US&append_to_response=runtime')
           .then(function successCallback(responseThree) {
               movie.runtime = responseThree.data.runtime;
-              movie.runtimeTwo = responseThree.dazta.episode_run_time[0];
+              movie.runtimeTwo = responseThree.data.episode_run_time[0];
               });
           });
         // END REQUEST FOR ADDITIONAL DETAILS
